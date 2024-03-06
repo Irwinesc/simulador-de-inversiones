@@ -1,0 +1,61 @@
+:root {
+    --primario: #101f36;
+    --secundario: #42f5f5;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --blanco2: antiquewhite;
+}
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--blanco2);
+}
+
+h1, h2, h3, h4, p {
+    text-align: center;
+}
+
+.container {
+    background-color: var(--primario);
+    text-align: center;
+    height: 80vh;
+    border-radius: 15px;
+    margin: 2% 10%;
+    overflow: auto;
+    display: grid;
+}
+
+legend {
+    background-color: var(--secundario);
+    color: var(--negro);
+    padding: 1rem;
+}
+
+input {
+    padding: 0.6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+.container__h3 {
+    color: var(--blanco);
+}
+
+.button {
+    border-radius: 5px;
+    background-color: red;
+    color: var(--blanco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}
