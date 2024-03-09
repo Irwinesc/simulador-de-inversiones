@@ -5,33 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inversiones</title>
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
 </head>
 <body>
-    <h1>Simulador de inversiones</h1><br>
-    <h2>Bienvenido(a) al simuldor de inversiones</h2>
-    <h3>Instrucciones:</h3>
-    <p>Llena los siguientes campos, y posteriormente haz clic en el botón de calcular valor futuro</p>
-        <div class="container">
-        <form method="post" action="" name="inversión">
-            <h3 class="container__h3">Ingresa los datos de la inversión</h3><br>
-        
-            <legend for="Monto">Monto mensual de la inversión:</legend>
-            <input type="number" name="Monto" min="1" id="rnt"></input><br>
+    <div>
+        <h1>Simulador de inversiones</h1><br>
+        <h2>Bienvenido(a) al simuldor de inversiones</h2>
+        <h3>Instrucciones:</h3>
+        <p>Llena los siguientes campos, y posteriormente haz clic en el botón de calcular valor futuro</p>
+    </div>
+    
+    <div class="container">
+        <form class="formulario" method="post" action="" name="inversión">
+            <fieldset>
+                <legend class="container__legend">Ingresa los datos de la inversión</legend><br>
+                <hr>
+                <div class="container__campos">
+                    <div class="campo">
+                        <label for="Monto">Monto mensual de la inversión:</label>
+                        <br>
+                        <input type="number" name="Monto" min="1" id="rnt"></input>
+                    </div>
+                    <br>
+                    <div class="campo">
+                        <label for="Tasa">Tasa de intrés anual:<br> *ingresar en porcentaje, sin el símbolo "%"</label>
+                        <input type="number" name="Tasa" min="1" id="ts"></input>
+                    </div>
+                    <br>
+                    <div class="campo">
+                        <label for="periodos">Número de periodos de la inversión:</label>
+                        <input type="number" name="periodos" min="1" id="periodo"></input>
+                    </div>
+                </div>
 
-            <legend for="Tasa">Tasa de intrés anual:<br> *ingresar en porcentaje, sin el símbolo "%"</legend>
-            <input type="number" name="Tasa" min="1" id="ts"></input><br>
-
-            <legend for="periodos">Número de periodos de la inversión:</legend>
-            <input type="number" name="periodos" min="1" id="periodo"></input><br>
-            
-            <button class="button" type="button" onclick="mostrar()">Calcular valor futuro</button>
-
-            <script src="JS/simulador de inversiones.js"></script>
-            
+                <br>
+                <br>
+                <hr>
+                <div>
+                    <button class="button" type="button" onclick="mostrar()">Calcular valor futuro</button>
+                </div>
+            </fieldset>
         </form> 
-        
         <h3 class="container__h3" id="resultado">Resultado</h3>
     </div>
+    <script src="JS/simulador de inversiones.js"></script>
     <footer>
         <h4>Derechos reservados - Irwin Escalante</h4>
     </footer>
